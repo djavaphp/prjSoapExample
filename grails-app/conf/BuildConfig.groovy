@@ -17,7 +17,7 @@ grails.project.dependency.resolution = {
         // specify dependency exclusions here; for example, uncomment this to disable ehcache:
         // excludes 'ehcache'
     }
-    log "error" // log level of Ivy resolver, either 'error', 'warn', 'info', 'debug' or 'verbose'
+    log "warn" // log level of Ivy resolver, either 'error', 'warn', 'info', 'debug' or 'verbose'
     checksums true // Whether to verify checksums on resolve
     legacyResolve false // whether to do a secondary resolve on plugin installation, not advised and here for backwards compatibility
 
@@ -60,5 +60,12 @@ grails.project.dependency.resolution = {
 
         compile ':cache:1.0.1'
 		compile ":cxf:1.1.3"
+	/*	compile('org.codehaus.groovy.modules.http-builder:http-builder:0.5.0') {
+			excludes "commons-logging", "xml-apis", "groovy"
+	}
+	compile("org.codehaus.groovy.modules:groovyws:0.5.2") {
+    excludes 'geronimo-servlet_2.5_spec', 'servlet-api', 'jaxb-xjc', 'jaxb-impl', 'xml-apis', 'saaj-impl', 'junit', 'slf4j-jdk14', 'xmlParserAPIs', 'jaxb-api', 'saaj-api', 'xmlbeans', 'jaxen', 'geronimo-stax-api_1.0_spec', 'geronimo-activation_1.0.2_spec', 'abdera-client', 'geronimo-activation_1.1_spec'
+}
+	*/
     }
 }

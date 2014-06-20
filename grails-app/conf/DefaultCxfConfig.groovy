@@ -3,6 +3,11 @@
 */
 
 cxf {
+	client{
+		masterServiceClient{
+			
+		}
+	}
     servlet {
 
         /**

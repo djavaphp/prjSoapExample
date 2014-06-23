@@ -20,5 +20,27 @@ class MasterService {
 		int sum =  value1+value2		
 		return sum
 	}
+	
+	@WebMethod
+	int multiplication(int value1 , int value2) {
+		int sum =  value1*value2
+		return sum
+	}
+	
+	@WebMethod
+	int substraction(int value1 , int value2) {
+		int sum =  value1-value2
+		return sum
+	}
     
+	@WebMethod
+	int division(int value1 , int value2) {
+		int sum =  value1/value2
+		return sum
+	}
+	
+	@WebMethod
+	String showmessage(String msg) {		
+		return msg
+	}
 }
